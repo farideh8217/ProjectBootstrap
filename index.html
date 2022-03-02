@@ -12,7 +12,7 @@
 
 </head>
 <body class="bg-light">
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white">
 
             <div class="d-flex align-items-center">
                 <a href="#" class="navbar-brand display-1 ">پنل مدیریت محتوا </a>
@@ -25,7 +25,7 @@
             </button>
         
             <div class="collapse navbar-collapse d-md-flex justify-content-between" id="mainmenu">
-                <nav class="navbar-nav text-right">
+                <nav class="navbar-nav">
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-tachometer-alt text-success"></i> 
@@ -50,7 +50,7 @@
                         <a href="#" class="nav-link" data-bs-toggle="dropdown">
                             <span class="badge rounded-pill bg-danger">5</span>
                             <i class="far fa-bell"></i>
-                            <div class="dropdown-menu  dropdown-menu-right ">
+                            <div class="dropdown-menu  dropdown-menu-right">
                                 <div class="dropdown-header text-center bg-light">شما 5 اعلان دارید</div>
                                 <a href="#" class="dropdown-item text-secondary">یک سفارش جدید ایجاد شد</a>
                                 <a href="#" class="dropdown-item text-secondary">یک کاربر جدید وارد شد</a>
@@ -61,7 +61,7 @@
                         <a href="#" class="nav-link" data-bs-toggle="dropdown">
                             <span class="badge rounded-pill bg-warning">8</span>
                             <i class="fas fa-tasks"></i>
-                            <div class="dropdown-menu  dropdown-menu-right">
+                            <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-header text-center bg-light">شما8دستور درحال اجرا دارید</div>
                                 <a href="#" class="dropdown-item text-secondary">یک سفارش جدید ایجاد شد</a>
                                 <a href="#" class="dropdown-item text-secondary">یک کاربر جدید وارد شد</a>
@@ -95,7 +95,7 @@
     <!-----------------------Navbar END-------------------------->
     <div class="container-fluid">
         <div class="row">
-            <div id="sidebar" class="col-md-2 bg-dark text-right collapse  show">
+            <div id="sidebar" class="col-5 col-sm-4 col-md-2 bg-dark text-right collapse  show ">
                 <ul class="nav  d-flex flex-column pr-0">
                     <li class="nav-item my-1">
                         <a href="#" class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#submenu1" >
@@ -103,7 +103,7 @@
                             نوشته ها
                             <i class="fas fa-chevron-left float-end mt-1"></i>
                         </a>
-                        <div class="collaps bg-secondary rounded" id="submenu1" >
+                        <div class="collapse bg-secondary rounded" id="submenu1" >
                             <ul class="nav pr-0">
                                 <li class="nav-item"><a href="#" class="nav-link">افزودن نوشته</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">مشاهده نوشته ها</a></li>
@@ -116,7 +116,7 @@
                             محصولات
                             <i class="fas fa-chevron-left float-end mt-1"></i>
                         </a>
-                        <div class="collaps bg-secondary rounded" id="submenu2" >
+                        <div class="collapse bg-secondary rounded" id="submenu2" >
                             <ul class="nav pr-0">
                                 <li class="nav-item"><a href="#" class="nav-link">مشاهده محصولات</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">افزودن محصول</a></li>
@@ -150,11 +150,11 @@
                 </ul>
             </div>
     <!-----------------------sidebar END-------------------------->
-            <div  id="main-content" class="col md-10 p-4">
+            <div  id="main-content" class="col-sm-8 col-md-10 p-4">
                 
-                <div class="card-deck">
+                <div class="row justify-content-center">
 
-                    <div class="card text-right text-white bg-warning mb-3 border-0 shadow" style="max-width: 18rem;">
+                    <div class="card text-right text-white bg-warning mb-3 border-0 shadow mx-3" style="max-width: 17rem;">
                         <div class="card-body">
                             <i class="fas fa-chart-bar h5 float-end"></i>
                             <h5 class="card-title">53000</h5>
@@ -162,7 +162,7 @@
                         </div>
                     </div>
 
-                    <div class="card text-right text-white bg-primary mb-3 border-0 shadow" style="max-width: 18rem;">
+                    <div class="card text-right text-white bg-primary mb-3 border-0 shadow mx-3" style="max-width: 17rem;">
                         <div class="card-body">
                             <i class="fas fa-users h5 float-end"></i>
                             <h5 class="card-title">25000</h5>
@@ -170,7 +170,7 @@
                         </div>
                     </div>
 
-                    <div class="card text-right text-white bg-danger mb-3 border-0 shadow" style="max-width: 18rem;">
+                    <div class="card text-right text-white bg-danger mb-3 border-0 shadow mx-3" style="max-width: 17rem;">
                         <div class="card-body">
                             <i class="fas fa-chart-pie h5 float-end"></i>
                             <h5 class="card-title">15000</h5>
@@ -178,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="card text-right text-white bg-success mb-3 border-0 shadow" style="max-width: 18rem;">
+                    <div class="card text-right text-white bg-success mb-3 border-0 shadow mx-3" style="max-width: 17rem;">
                         <div class="card-body">
                             <i class="fas fa-chart-line h5 float-end"></i>
                             <h5 class="card-title">53000</h5>
@@ -186,12 +186,156 @@
                         </div>
                     </div>
 
+                </div>
+    <!----------------------------card deck---------------------------------------->        
+                <div class="card  text-dark bg-white my-3 border-0 shadow " >
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">آمار بازدید سایت</h5>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-secondary">روز</button>
+                            <button type="button" class="btn btn-outline-secondary">ماه</button>
+                            <button type="button" class="btn btn-outline-secondary">سال</button>
+                        </div>
+                        <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="گرفتن خروجی">
+                            <i class="fas fa-file-export text-white"></i>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">بازدید کل</strong>
+                                <p class="my-2">53000 کاربر (43%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-info" style="width: 43%;"></div>
+                                </div>
+                            </div>
 
+                            <div class="col-12 col-sm-6 col-md my-2  my-md-0">
+                                <strong class="text-muted"> بازدیدهای یکتا</strong>
+                                <p class="my-2">49000 کاربر (35%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-primary" style="width: 35%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">نرخ خروج</strong>
+                                <p class="my-2">49000 کاربر (35%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-warning" style="width: 40%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">بازدید صفحات سایت</strong>
+                                <p class="my-2">85000 کاربر (80%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-danger" style="width: 80%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">کاربران جدید</strong>
+                                <p class="my-2">20000 کاربر (25%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-success" style="width: 25%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!----------------------------visited----------------------------------------> 
+                <div class="card  text-dark bg-white my-4 border-0 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">گزارشات فروش</h5>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                  <tr>
+                                    <th scope="col">نام محصول</th>
+                                    <th scope="col">ایمیل کاربر</th>
+                                    <th scope="col">درگاه پرداخت</th>
+                                    <th scope="col">وضعیت</th>
+                                    <th scope="col">زمان تراکنش</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>آموزش بوت استرپ4</td>
+                                    <td>k@gmail.com</td>
+                                    <td>بانک ملت</td>
+                                    <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                    <td>10دقیقه پیش</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>آموزش بوت استرپ4</td>
+                                    <td>k@gmail.com</td>
+                                    <td>بانک ملت</td>
+                                    <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                    <td>10دقیقه پیش</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>آموزش بوت استرپ4</td>
+                                    <td>k@gmail.com</td>
+                                    <td>بانک ملت</td>
+                                    <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                    <td>10دقیقه پیش</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>آموزش بوت استرپ4</td>
+                                    <td>k@gmail.com</td>
+                                    <td>بانک ملت</td>
+                                    <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                    <td>10دقیقه پیش</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>آموزش بوت استرپ4</td>
+                                    <td>k@gmail.com</td>
+                                    <td>بانک ملت</td>
+                                    <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                    <td>10دقیقه پیش</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>آموزش بوت استرپ4</td>
+                                    <td>k@gmail.com</td>
+                                    <td>بانک ملت</td>
+                                    <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                    <td>10دقیقه پیش</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>آموزش بوت استرپ4</td>
+                                    <td>k@gmail.com</td>
+                                    <td>بانک ملت</td>
+                                    <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                    <td>10دقیقه پیش</td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-        </div>
     </div>
      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script src="js/Chart.min.js"></script>
+        
+    
 </body>
 </html>
